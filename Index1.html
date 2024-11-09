@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Art and Music Inspiration Platform - Sign Up</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+        }
+
+        .signup-container {
+            background: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            max-width: 90%;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .signup-form input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+
+        .signup-form input:focus {
+            outline: none;
+            border-color: #6a11cb;
+            background-color: #fff;
+        }
+
+        .signup-form button {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 18px;
+            border-radius: 8px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .signup-form button:hover {
+            background: #4e54c8;
+        }
+
+        .terms {
+            font-size: 12px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .terms input {
+            margin-right: 5px;
+        }
+
+        .login-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #6a11cb;
+            text-decoration: none;
+        }
+
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <h1>Create an Account</h1>
+        <form action="/submit-signup" method="POST" class="signup-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="country" placeholder="Country" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <div class="terms">
+                <input type="checkbox" name="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+            </div>
+            <!-- <button type="submit">CREATE ACCOUNT</button> -->
+            <button type="button" onclick="window.location.href='index.html'">CREATE ACCOUNT</button>
+
+        </form>
+        <a href="Index.html" class="login-link">Already have an account? Sign in</a>
+    </div>
+
+</body>
+</html>
